@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SetUp>
+  <DriverName>EPSON L120 Series</DriverName>
+  <Language>EN</Language>
+  <ShortCut>
+    <JA>EPSON ﾏﾆｭｱﾙ</JA>
+    <EN>EPSON Manuals</EN>
+    <FR>Manuels EPSON</FR>
+    <DE>EPSON-Handbücher</DE>
+    <NL>EPSON-handleidingen</NL>
+    <IT>Manuali EPSON</IT>
+    <ES>Manuales de EPSON</ES>
+    <PT>Manuais EPSON</PT>
+    <TR>EPSON Kılavuzları</TR>
+    <EL>Εγχειρίδια EPSON</EL>
+    <SL>Priročniki EPSON</SL>
+    <HR>EPSON priručnici</HR>
+    <MK>Упатства EPSON</MK>
+    <SR>EPSON uputstva za upotrebu</SR>
+    <DA>EPSON-manualer</DA>
+    <FI>EPSON-oppaat</FI>
+    <NO>Håndbøker for EPSON</NO>
+    <SV>Epsons handböcker</SV>
+    <PL>Podręczniki firmy EPSON</PL>
+    <CS>Příručky společnosti EPSON</CS>
+    <HU>EPSON Kézikönyvek</HU>
+    <SK>Príručky EPSON</SK>
+    <RO>Manualele EPSON</RO>
+    <BG>Ръководства на EPSON</BG>
+    <LV>„EPSON” rokasgrāmatas</LV>
+    <LT>„EPSON“ instrukcijos</LT>
+    <ET>Epsoni juhendid</ET>
+    <CA>Manuals d'EPSON</CA>
+    <RU>Руководства EPSON</RU>
+    <UK>Посібники EPSON</UK>
+    <KK>EPSON нұсқаулықтары</KK>
+    <AR>أدلة EPSON</AR>
+    <FA>دفترچه راهنماهای EPSON</FA>
+    <KO>EPSON 매뉴얼</KO>
+    <SC>爱普生产品说明书</SC>
+    <TC>EPSON 說明文件</TC>
+  </ShortCut>
+</SetUp>

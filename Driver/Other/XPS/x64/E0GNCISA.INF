@@ -1,0 +1,79 @@
+;
+; Copyright (c) 2011-2012  SEIKO EPSON Corporation
+;
+; All rights reserved.
+;
+; THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+; ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+; THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+; PARTICULAR PURPOSE.
+;
+; File Name:
+;
+;    E0GNCISA.inf
+;
+[Version]
+Signature="$Windows NT$"
+Provider=%EPSON%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+DriverVer=11/12/2013, 2.03.00.00
+CatalogFile=E0GNCISA.CAT
+
+[Manufacturer]
+%EPSON%=EPSON,NTamd64.6.0
+
+[EPSON]
+
+[EPSON.NTamd64.6.0]
+"Epson ESC/P Standard 10 XPS" = XPS_CLSDRV,,1284_CID_EpsonStd10
+
+[XPS_CLSDRV]
+CopyFiles=X64_Common_Module,X64_Std10_Module,LANMON_COMMON
+DriverFile=mxdwdrv.dll
+ConfigFile=UniDrvUI.dll
+HelpFile=UniDrv.HLP
+DataFile=E0INCGSA.GPD
+CoreDriverSections="{D20EA372-DD35-4950-9ED8-A6335AFE79F0},UNIDRV.OEM","{D20EA372-DD35-4950-9ED8-A6335AFE79F5},XPSDRV.OEM","{D20EA372-DD35-4950-9ED8-A6335AFE79F0},XPSGPD.OEM"
+LanguageMonitor="Epson ESC/P Standard 10 XPS 64MonitorBE,E0INCLMN.DLL"
+AddReg=Std10.AddReg
+
+[PrinterPackageInstallation.amd64]
+PackageAware=TRUE
+CoreDriverDependencies={D20EA372-DD35-4950-9ED8-A6335AFE79F0},{D20EA372-DD35-4950-9ED8-A6335AFE79F5}
+
+[DestinationDirs]
+DefaultDestDir=66000
+LANMON_COMMON=66002
+
+[LANMON_COMMON]
+E0INCLMN.DLL,EBPMONB.DLL,,,0x00000020
+E0INCPRO.DLL,ECBTEGB.DLL,,,0x00000020
+
+[X64_Common_Module]
+E0INCFF1.DLL,E0GFF001.DLL
+E0INCLM1.LMD,E0GNCLM1.LMD
+
+[X64_Std10_Module]
+E0INCGSA.GPD,E0GNCGSA.GPD
+E0INCFSA.DLL,E0GNCFSA.DLL
+E0INCSA0-PipelineConfig.XML,E0GNCSA0.XML
+
+[Std10.AddReg]
+HKLM,"SYSTEM\CurrentControlSet\Control\Print\Printers\Epson ESC/P Standard 10 XPS\PrinterDriverData","ECBTEGBName",0x00000000,"E0INCPRO.DLL"
+
+[SourceDisksNames.amd64]
+1 = %DISKLABEL%,,,\WINX64
+
+[SourceDisksFiles]
+E0GNCGSA.GPD                  = 1
+E0GNCSA0.XML                  = 1
+E0GNCFSA.DLL                  = 1
+E0GFF001.DLL                  = 1
+EBPMONB.DLL                   = 1
+ECBTEGB.DLL                   = 1
+E0GNCLM1.LMD                  = 1
+
+[Strings]
+DISKLABEL="XPS Class Driver Location"
+EPSON   = "EPSON"

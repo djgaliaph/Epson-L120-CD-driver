@@ -1,0 +1,5 @@
+[Version]
+DriverVer=05/20/2013,4.1.0.0
+PackageType=2024
+ExecuteName=Setup.exe
+SoftwareUpdate=1
